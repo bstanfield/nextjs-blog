@@ -1,7 +1,7 @@
-import Layout from '../../components/Layout'
+import Layout from '../../components/layout'
 import Head from 'next/head'
 import { getAllArticleIds, getArticleData } from '../../lib/articles'
-import Date from '../../components/Date'
+import Date from '../../components/date'
 // import utilStyles from '../../styles/utils.module.css'
 
 export default function Article({ article }) {
