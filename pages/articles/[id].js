@@ -2,7 +2,7 @@ import Layout from '../../components/Layout'
 import Head from 'next/head'
 import { getAllArticleIds, getArticleData } from '../../lib/articles'
 import Date from '../../components/Date'
-import utilStyles from '../../styles/utils.module.css'
+// import utilStyles from '../../styles/utils.module.css'
 
 export default function Article({ article }) {
   return (
@@ -11,8 +11,8 @@ export default function Article({ article }) {
         <title>{article.title}</title>
       </Head>
       <article>
-        <h1 className={utilStyles.headingXL}>{article.title}</h1>
-        <div className={utilStyles.lightText}>
+        <h1>{article.title}</h1>
+        <div>
           <Date dateString={article.date} />
         </div>
         <div dangerouslySetInnerHTML={{ __html: article.contentHtml }} />
